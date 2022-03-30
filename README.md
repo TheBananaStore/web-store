@@ -6,7 +6,7 @@ This is the Banana Web Store page, built with vanilla HTML, CSS, and JS. It's mo
 > 
 > Font Awesome 4 Icons, they have some really nice icons.
 > 
-> Hosting by InfinityFree, because we don't have capital.
+> The site is hosted by GitHub Pages, as it's free and we can use GH to edit the site with nice version control.
 > 
 > Domain from Freenom, that's why we have that weird .cf domain. It's free as again, we don't make money off this. Might do slight monetization, but NOT Google Ads. Just some small unobtrusive ads.
 
