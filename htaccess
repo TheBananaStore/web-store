@@ -1,9 +1,0 @@
-ErrorDocument 400 http://http.cat/400
-ErrorDocument 401 http://http.cat/401
-ErrorDocument 403 http://http.cat/403
-ErrorDocument 404 http://http.cat/404
-ErrorDocument 503 http://http.cat/503
-RewriteEngine On
-RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
