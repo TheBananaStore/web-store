@@ -13,11 +13,11 @@ const Sidebar = document.getElementById("sidebar");
 var SidebarOpen = false;
 
 function OpenSidebar() {
-    Sidebar.style.display = "block";
-};
+    gsap.to("#sidebar", {duration: 1, x: 100});
+}; 
 
 function CloseSidebar() {
-    Sidebar.style.display = "none";
+    gsap.to("#sidebar", {duration: 1, x: -100});
 };
 
 function ToggleSidebar() {
