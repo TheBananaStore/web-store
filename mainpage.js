@@ -1,6 +1,11 @@
 const {
   ThemeProvider,
-  createTheme
+  createTheme,
+  AppBar,
+  Toolbar,
+  Typography,
+  IconButton,
+  Icon
 } = MaterialUI;
 
 // Create a theme instance.
@@ -8,7 +13,7 @@ const theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#1976d2',
+      main: '#1f1f1f',
     },
   },
 });
@@ -17,7 +22,15 @@ const theme = createTheme({
 function App() {
   return (
     <div>
-      
+      <AppBar position="fixed">
+        <Toolbar>
+          <IconButton>
+            <Icon>menu</Icon>
+          </IconButton>
+          <Typography variant="h6">The Banana Store</Typography>
+        </Toolbar>
+      </AppBar>
+      <Toolbar />
     </div>
   );
 }
