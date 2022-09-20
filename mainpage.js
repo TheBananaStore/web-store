@@ -22,15 +22,7 @@ const theme = createTheme({
 function App() {
   return (
     <div>
-      <AppBar position="fixed">
-        <Toolbar>
-          <IconButton>
-            <Icon>menu</Icon>
-          </IconButton>
-          <Typography variant="h6">The Banana Store</Typography>
-        </Toolbar>
-      </AppBar>
-      <Toolbar />
+      <h1>Does this even work???</h1>
     </div>
   );
 }
