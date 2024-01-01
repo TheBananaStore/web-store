@@ -1,5 +1,5 @@
 # Banana Web Store
-This is the Banana Web Store page, built with vanilla HTML, CSS, and JS. It's mostly a single-page site, using JS to show, hide, and replace components as needed. that's done to improve speed. The production version is at https://thebananastore.cf.
+This is the Banana Web Store page, built with vanilla HTML, CSS, and JS. It's mostly a single-page site, using JS to show, hide, and replace components as needed. that's done to improve speed. The production version is at https://thebananastore.xyz.
 
 # Stuff used
 > W3.CSS, a quality alternative to bootstrap that makes my job a whole lot easier
