@@ -1,103 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My page</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <script
-      src="https://unpkg.com/react@latest/umd/react.development.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
-    <script
-      src="https://unpkg.com/@mui/material@latest/umd/material-ui.development.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://unpkg.com/babel-standalone@latest/babel.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Fonts to support Material Design -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
-    <!-- Icons to support Material Design -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="text/babel">
-    const { colors, CssBaseline, ThemeProvider, Typography, Container, createTheme, Box, SvgIcon, Link } = MaterialUI;
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-// Create a theme instance.
-const theme = createTheme({
-    palette: {
-        primary: {
-            main: "#556cd6",
-        },
-        secondary: {
-            main: "#19857b",
-        },
-        error: {
-            main: colors.red.A400,
-        },
-    },
-});
+        <title>Banana Web Store</title>
 
-function LightBulbIcon(props) {
-    return (
-        <SvgIcon {...props}>
-            <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z" />
-        </SvgIcon>
-    );
-}
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="/style.css" />
 
-function ProTip() {
-    return (
-        <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
-            <LightBulbIcon sx={{ mr: 1, verticalAlign: "top" }} />
-            Pro tip: See more <Link href="https://mui.com/getting-started/templates/">templates</Link> on the MUI documentation.
-        </Typography>
-    );
-}
+        <!-- yeet w3.css and some various color sheets in -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css" />
 
-function Copyright() {
-    return (
-        <Typography variant="body2" color="text.secondary" align="center">
-            {"Copyright © "}
-            <Link color="inherit" href="https://mui.com/">
-                Your Website
-            </Link>{" "}
-            {new Date().getFullYear()}
-            {"."}
-        </Typography>
-    );
-}
+        <!-- haha bye bye storage space time to yeet some fun icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body class="w3-2020-navy-blazer">
+        <!-- this is the start of content -->
+        <!-- here lies navbar -->
+        <div class="w3-panel w3-yellow w3-display-container w3-round-large">
+            <span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topright w3-round-large w3-hover-red">&times;</span>
+            <h3 align="center">NOTICE</h3>
+            <p>
+                This site is still under heavy development. If you have any issues, get in touch with the Banana App Store Web Development Team.
+            </p>
+        </div>
 
-function App() {
-    return (
-        <Container maxWidth="sm">
-            <Box sx={{ my: 4 }}>
-                <Typography variant="h4" component="h1" gutterBottom>
-                    CDN example
-                </Typography>
-                <ProTip />
-                <Copyright />
-            </Box>
-        </Container>
-    );
-}
+        <!-- here's the sidebar -->
+        <div class="w3-top w3-sidebar w3-bar-block w3-2021-inkwell w3-card-4" style="display: block; width: 200px; transform: translate(-200px, 0px)" id="sidebar">
+            <button class="w3-button w3-bar-item">site broke :(</button>
+            <button class="w3-button w3-bar-item" onclick="window.location.href='https://docs.thebananastore.cf';">Banana Store Documentation</button>
+            <button class="w3-button w3-bar-item" onclick="window.location.href='https://docs.thebananastore.cf/projects/dev';">Developer API Documentation</button>
+        </div>
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-    <ThemeProvider theme={theme}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-        <CssBaseline />
-        <App />
-    </ThemeProvider>
-);
+        <!-- Menu bar HTML Code -->
 
-    </script>
-  </body>
+        <div>
+            <div class="w3-top w3-bar w3-2021-inkwell w3-mobile w3-card-4">
+                <div class="w3-bar-item w3-button w3-ripple w3-hover-dark-gray" id="menuNav" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <div class="w3-bar-item">BANANA<strong>WEB</strong>STORE</div>
+
+                <div class="w3-bar-item w3-button w3-ripple w3-hover-dark-gray w3-right" id="SearchButton">
+                    <em class="fa fa-search"></em>
+                </div>
+                
+                <input type="text" class="w3-bar-item w3-input w3-right w3-animate-input w3-border" placeholder="Search apps..." id="SearchInput" />
+                
+                <button class="w3-bar-item w3-button w3-ripple w3-hover-dark-gray w3-right" onclick='window.open("https://stats.uptimerobot.com/R0MO4cGVqv", "_blank")'>Status</button>
+            </div>
+        </div>
+
+        <!-- Add SlideShow HTML Code -->
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/GIMP.png" style="width: 100%;" alt="Gimp Logo" />
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/LineRider.png" style="width: 100%;" alt="LineRider Logo" />
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/MCPI.png" style="width: 100%;" alt="MCPI++ Logo" />
+                <div class="text"></div>
+            </div>
+        </div>
+
+        <div class="w3-container">
+            <h3>FEATURED</h3>
+            A curated list of our best apps. If you're new to the store, start here.
+        </div>
+    </body>
+    <footer>
+        <!-- load our JS files in footer for faster load -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+        <script src="/script.js" defer></script>
+        <!--script src="/adblocktest.js" defer></script-->
+    </footer>
 </html>
